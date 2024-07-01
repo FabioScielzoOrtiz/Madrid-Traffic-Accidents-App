@@ -1,6 +1,6 @@
 streamlit
 pandas
-polars==1.0.0 
+polars
 numpy
 tabulate
 streamlit_extras
