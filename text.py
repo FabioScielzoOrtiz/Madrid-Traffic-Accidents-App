@@ -449,6 +449,7 @@ def get_text():
     text['plot_titles']['Barplot']['female_driver_involved'] = '<b>Distribution of Female Drivers Involved<br> Madrid Traffic Accidents</b>'
     text['plot_titles']['Barplot']['only_female_driver_involved'] = '<b>Distribution of Only Female Drivers Involved<br> Madrid Traffic Accidents</b>'
     text['plot_titles']['Barplot']['young_driver_involved'] = '<b>Distribution of Young Drivers Involved<br> Madrid Traffic Accidents</b>'
+    text['plot_titles']['Barplot']['only_young_driver_involved'] = '<b>Distribution of Only Young Drivers Involved<br> Madrid Traffic Accidents</b>'
     text['plot_titles']['Barplot']['old_driver_involved'] = '<b>Distribution of Old Drivers Involved<br> Madrid Traffic Accidents</b>'
     text['plot_titles']['Barplot']['positive_driver_involved'] = '<b>Distribution of Positive Drivers Involved<br> Madrid Traffic Accidents</b>'
 
