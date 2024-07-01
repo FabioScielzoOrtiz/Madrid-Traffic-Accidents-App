@@ -219,6 +219,10 @@ def get_text():
     - The **distribution of traffic accidents in Madrid over the days** is fairly **uniform**, which means that there is no special day with a higher or lower number of accidents.
     - The only day that breaks this pattern is the 31st, which shows a lower number of accidents than the rest, but this is due to the fact that not all months have 31 days.
     """
+    text['analysis']['Histogram']['hour'] = """
+    **Insights:**
+    TO DO 
+    """
 
     #########################################################################
 
@@ -469,6 +473,7 @@ def get_text():
     text['plot_titles']['Histogram']['month'] = '<b>Distribution of Number of Accidents by Month<br> Madrid Traffic Accidents (2019-2024)</b>'
     text['plot_titles']['Histogram']['week'] = '<b>Distribution of Number of Accidents by Week<br> Madrid Traffic Accidents (2019-2024)</b>'
     text['plot_titles']['Histogram']['day'] = '<b>Distribution of Number of Accidents by Day<br> Madrid Traffic Accidents (2019-2024)</b>'
+    text['plot_titles']['Histogram']['hour'] = '<b>Distribution of Number of Accidents by Hour<br> Madrid Traffic Accidents (2019-2024)</b>'
 
     text['plot_titles']['Lineplot'] = {}
     text['plot_titles']['Lineplot']['num_people_involved'] = '<b>Distribution of Number People Involved<br> Madrid Traffic Accidents (2019-2024)</b>'
