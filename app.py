@@ -290,7 +290,10 @@ if st.sidebar.checkbox('General Data Analysis', key='data_analysis_checkbox'):
                     display_barplot(X=acc_not_people_df[col], figsize=figsize, color=color, orientation=orientation,
                                     title=text['plot_titles'][viz_type][col]
                                    )
-                st.markdown(text['analysis'][viz_type][col])
+                try:
+                    st.markdown(text['analysis'][viz_type][col])
+                except:
+                    pass
         
         elif viz_type == 'Histogram':
 
@@ -301,8 +304,11 @@ if st.sidebar.checkbox('General Data Analysis', key='data_analysis_checkbox'):
                 display_histogram(X=acc_not_people_df[col], figsize=figsize, color=color, nbins=n_bins, 
                                   title=text['plot_titles'][viz_type][col]
                                  )
-                st.markdown(text['analysis'][viz_type][col])
-
+                try:
+                    st.markdown(text['analysis'][viz_type][col])
+                except:
+                    pass
+                
         #elif viz_type == 'Lineplot':
         #    selected_periods = multi_selector(options_list=list(num_acc_time_series.keys()), title='Select a periodicity:')
         #    for i, period in enumerate(selected_periods):
