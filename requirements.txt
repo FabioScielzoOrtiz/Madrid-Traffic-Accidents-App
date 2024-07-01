@@ -5,3 +5,4 @@ plotly
 numpy
 BigEDA
 nbformat
+streamlit_extras

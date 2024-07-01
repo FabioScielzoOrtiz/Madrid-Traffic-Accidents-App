@@ -250,7 +250,7 @@ if st.sidebar.checkbox('General Data Analysis', key='data_analysis_checkbox'):
 
     elif analysis_type == "Frequency Tables":
         selected_variables = multi_selector(options_list = people_dependent_variables + not_people_dependent_variables, title='Select a variable:', key='variables_multiselector')
-        #display_frequency_tables(acc_df, acc_not_people_df, people_dependent_variables, not_people_dependent_variables, selected_variables)
+        display_frequency_tables(acc_df, acc_not_people_df, people_dependent_variables, not_people_dependent_variables, selected_variables)
 
     elif analysis_type == 'Visualization':
         st.markdown("<p style='font-size:18px; margin-bottom:-90px'>Select Visualization Type:</p>", unsafe_allow_html=True)
