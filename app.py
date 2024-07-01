@@ -238,7 +238,7 @@ if st.sidebar.checkbox('General Data Analysis', key='data_analysis_checkbox'):
     
     st.markdown("<p style='font-size:18px; margin-bottom:-90px'>Select Analysis Type:</p>", unsafe_allow_html=True)
     analysis_type = st.selectbox(
-                                    "",
+                                    " ",
                                     ("Descriptive Summary", "Frequency Tables", "Visualization"),
                                     key='analysis_type_selectbox'
                                 )
@@ -255,7 +255,7 @@ if st.sidebar.checkbox('General Data Analysis', key='data_analysis_checkbox'):
     elif analysis_type == 'Visualization':
         st.markdown("<p style='font-size:18px; margin-bottom:-90px'>Select Visualization Type:</p>", unsafe_allow_html=True)
         viz_type = st.selectbox(
-                                    "",
+                                    " ",
                                     #("Select All", "Barplot", "Histogram", "Lineplot"),
                                     ("Barplot", "Histogram"),
                                     key='visualization_type_selectbox',
@@ -308,7 +308,7 @@ if st.sidebar.checkbox('General Data Analysis', key='data_analysis_checkbox'):
                     st.markdown(text['analysis'][viz_type][col])
                 except:
                     pass
-                
+
         #elif viz_type == 'Lineplot':
         #    selected_periods = multi_selector(options_list=list(num_acc_time_series.keys()), title='Select a periodicity:')
         #    for i, period in enumerate(selected_periods):
@@ -344,7 +344,7 @@ if st.sidebar.checkbox('Specific Data Analysis'):
                           }
     analysis_type_tuple = tuple(x for x in analysis_type_dict.values())
     analysis_type = st.selectbox(
-                                    "",
+                                    " ",
                                     analysis_type_tuple,
                                     key='specific_analysis_type_selectbox'
                                 )

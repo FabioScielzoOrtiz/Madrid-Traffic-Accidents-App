@@ -23,7 +23,7 @@ def multi_selector(options_list, title, key):
     
     st.markdown(f"<p style='font-size:18px; margin-bottom:-90px'>{title}</p>", unsafe_allow_html=True)
     selected_options = st.multiselect(
-        "",
+        " ",
         options=["Select All"] + options_list,
         default=["Select All"],
         key=key
