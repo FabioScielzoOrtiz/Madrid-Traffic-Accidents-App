@@ -70,7 +70,6 @@ def display_frequency_tables(acc_df, acc_not_people_df, people_dependent_variabl
 
     st.markdown('#### Frequency tables')
 
-
     st.markdown(
         """
         <div style="background-color:#FFF3CD; border-left:5px solid #FFA726; padding:6px; border-radius:3px; font-size:14px;">
