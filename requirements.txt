@@ -1,3 +1,7 @@
 streamlit
-pandas==1.0.0
+pandas
 polars
+plotly
+numpy
+BigEDA
+nbformat

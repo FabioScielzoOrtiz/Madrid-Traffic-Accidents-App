@@ -50,7 +50,8 @@ def display_descriptive_summary(acc_df, acc_not_people_df, people_dependent_vari
                                cat_col_names=people_dependent_variables)
     quant_summary_2, cat_summary_2 = summary(df=acc_not_people_df, auto_col=False,
                                         quant_col_names=['num_people_involved'],
-                                        cat_col_names=[x for x in not_people_dependent_variables if x != 'num_people_involved'])
+                                        cat_col_names=[x for x in not_people_dependent_variables 
+                                                       if x not in ['num_people_involved', 'fecha']])
     try:
         cat_summary = pd.concat([cat_summary_1, cat_summary_2], axis=0)
     except:
