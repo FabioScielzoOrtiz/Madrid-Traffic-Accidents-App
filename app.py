@@ -246,7 +246,7 @@ if st.sidebar.checkbox('General Data Analysis', key='data_analysis_checkbox'):
     
     if analysis_type == "Descriptive Summary":
         selected_variables = multi_selector(options_list = people_dependent_variables + not_people_dependent_variables, title='Select a variable:', key='variables_multiselector')
-        #display_descriptive_summary(acc_df, acc_not_people_df, people_dependent_variables, not_people_dependent_variables, selected_variables)
+        display_descriptive_summary(acc_df, acc_not_people_df, people_dependent_variables, not_people_dependent_variables, selected_variables)
 
     elif analysis_type == "Frequency Tables":
         selected_variables = multi_selector(options_list = people_dependent_variables + not_people_dependent_variables, title='Select a variable:', key='variables_multiselector')
