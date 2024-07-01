@@ -155,13 +155,21 @@ def get_text():
         >⚠️ This is an **lower-bound estimatimation** of the first statistic and a **upper-bound estimation** of the second one, because of the presence of missing values in `rango_edad`. 
          Drivers with unknown age are directly considered as non-young drivers, even though they could actually be young ([18,24]). 
          """ 
+    text['analysis']['Barplot']['only_young_driver_involved'] = """
+    **Insights:**
+        TO DO 
+         """ 
     text['analysis']['Barplot']['old_driver_involved'] = """
     **Insights:**
     - *At least* in the **5.74%** of Madrid traffic accidents old drivers (>= 65) were involved. 
     - *At most* in the **94.26%** of Madrid traffic accidents, non-old drivers were involved.
         >⚠️ This is an **lower-bound estimatimation** of the first statistic and a **upper-bound estimation** of the second one, because of the presence of missing values in `rango_edad`. 
          Drivers with unknown age are directly considered as non-old drivers, even though they could actually be old (>= 65).
-    """    
+    """ 
+    text['analysis']['Barplot']['only_old_driver_involved'] = """
+    **Insights:**
+        TO DO 
+         """    
     text['analysis']['Barplot']['positive_driver_involved'] = """
     **Insights:**
     - *At least* the **7.21%** of Madrid traffic accidents positive in drugs or alcohol drivers `(positive_driver_involved)` were involved. 
@@ -451,6 +459,7 @@ def get_text():
     text['plot_titles']['Barplot']['young_driver_involved'] = '<b>Distribution of Young Drivers Involved<br> Madrid Traffic Accidents</b>'
     text['plot_titles']['Barplot']['only_young_driver_involved'] = '<b>Distribution of Only Young Drivers Involved<br> Madrid Traffic Accidents</b>'
     text['plot_titles']['Barplot']['old_driver_involved'] = '<b>Distribution of Old Drivers Involved<br> Madrid Traffic Accidents</b>'
+    text['plot_titles']['Barplot']['only_old_driver_involved'] = '<b>Distribution of Only Old Drivers Involved<br> Madrid Traffic Accidents</b>'
     text['plot_titles']['Barplot']['positive_driver_involved'] = '<b>Distribution of Positive Drivers Involved<br> Madrid Traffic Accidents</b>'
 
     text['plot_titles']['Histogram'] = {}
