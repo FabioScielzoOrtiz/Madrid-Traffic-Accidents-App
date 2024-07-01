@@ -1,0 +1,11 @@
+streamlit
+pandas==1.0.0
+polars
+numpy
+tabulate
+streamlit_extras
+BigEDA
+scipy
+seaborn
+matplotlib
+nbformat 
