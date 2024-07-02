@@ -23,7 +23,7 @@ from text import get_text
 
 @st.cache_data # To save time and avoid long run time issues with the app
 def load_resources():
-    return pickle.load(open('resources/resources_web_app.pickle', 'rb'))
+    return pickle.load(open('data/resources_web_app.pickle', 'rb'))
 
 def convert_to_pandas(_acc_df):
     return _acc_df.to_pandas()
